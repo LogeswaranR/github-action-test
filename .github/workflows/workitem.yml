@@ -1,0 +1,41 @@
+# Create or update a work item
+#name: TFS_WorkItem
+#jobs:
+  #Create_issue:
+  # - task: CreateWorkItem@1
+  #   displayName: 'Create work item'
+  #   inputs:
+  #     #teamProject: # Optional
+  #     workItemType: 
+  #     title: 
+      #assignedTo: # Optional
+      #areaPath: # Optional
+      #iterationPath: # Optional
+      #fieldMappings: # Optional; Required if your process defines additional required work item fields
+      #associate: false # Optional
+      #associationType: build # Optional; Valid values: build, integratedInBuild, foundInBuild
+      # ===== Linking Inputs =====
+      #linkWorkItems: false # Optional
+      #linkType: # Required if linkWorkItems = true
+      #linkTarget: id # Optional; Valid values: id, wiql
+      #targetId: # Required if linkWorkItems = true and linkTarget = id
+      #targetWiql: # Required if linkWorkItems = true and linkTarget = wiql
+      #limitWorkItemLinksToSameProject: false # Optional
+      #linkPR: false # Optional
+      #linkCode: false # Optional
+      #commitsAndChangesets: # Required if linkCode = true
+      # ===== Attachments Inputs =====
+      #addAttachments: false # Optional
+      #attachmentsFolder: # Optional
+      #attachments: # Required if addAttachments = true
+      # ===== Duplicate Inputs =====
+      #preventDuplicates: false # Optional
+      #keyFields: # Required if preventDuplicates = true
+      #updateDuplicates: false # Optional
+      #updateRules: # Optional
+      # ===== Outputs Inputs =====
+      #createOutputs: false # Optional
+      #outputVariables: # Required if createOutputs = true
+      # ===== Advanced Inputs =====
+      #authToken: #Optional
+      #allowRedirectDowngrade: false # Optional
